@@ -191,4 +191,11 @@ install(DIRECTORY launch
   DESTINATION share/${PROJECT_NAME}
 )
 
+ament_python_install_package(${PROJECT_NAME}
+  SETUP_CFG
+    ${PROJECT_NAME}/setup.cfg
+  SCRIPTS_DESTINATION
+    lib/${PROJECT_NAME}
+)
+
 ament_package()
